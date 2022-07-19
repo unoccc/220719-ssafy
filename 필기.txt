@@ -1,0 +1,58 @@
+- Web 기초 (07/19)
+
+※ 카카오오븐, JS 안나옴, CSS까지 나옴, flex 
+
+padding - 안 쪽 여백(글자와 Element 사이)
+margin - 바깥 쪽 여백(Elemnet와 Browser 사이)
+
+box-shadow 시험에 나옴!
+=> box-shadow : 수평 수직 흐림반경 확산거리 색상;
+
+<Alt + 클릭 하면 다중 커서 잡을 수 있음>
+
+<style 태그에서 선택자 , 로 여러가지 선택 가능>
+
+inline 요소의 특징
+- 줄 바꿈이 일어나지 않음
+- 크기 조절 불가능 ( 대표적으로 span, a tag ...)
+
+block 요소의 특징
+- 요소마다 줄 바꿈이 나타남( 한 줄을 차지 )
+- 크기 조절 가능
+- margin, padding 가능 ( 대표적으로 div, p, h1 tag ... )
+
+inline-block의 특징
+- 줄 바꿈이 일어나지 않음
+- margin, padding 가능
+- 하지만 크기 조정이 가능함 ( 대표적으로 button, select tag ... )
+
+display : block -> inline, inline -> block 등 요소의 특징을 바꿀 수 있음
+=> style 안에 display : inline || block || inline-block
+=> none을 사용하면 감춤, 영역도 감춰짐  ! 하지만 코드에선 사라진 것은 아니다
+
+★ flex : flex의 기본은 정렬 가로-세로, row-column, 행-렬
+부모가 flex여야 하고 자식이 item
+부모 - flex-container,  flex-item
+
+flex-direction 은 row가 기본값
+align-items
+justify-content - space-around(요소와 적절한 간격) 위-아래도 반 만큼 간격둠 / space-between(요소와 적절한 간격) 위-아래 딱 붙임
+
+자식 클래스에 <flex: 숫자;> 하면 숫자만큼의 비율을 가짐.
+
+position : fixed; 하면 스크롤을 해도 고정됨.
+position 은 부모와 관련이 있다.
+position의 default 값은 static. / relative은 상대적인 좌표로 이동 -> 기준은 부모 (left : 왼쪽 공백 right, top, bottom 존재)
+absoulte는 절대적인 좌표로 이동 -> 기준은 static이 아닌 부모(relative~) <만약 static이 아닌 부모가 없다면 Browser 기준> 
+
+z-index 우선순위를 설정해서 html 상 앞에 나오게 하는 tool ( 숫자가 클수록 우선순위 ↑ )
+
+카멜 표기법 [ex) camelCase]
+소문자로 시작, 중간에 대문자
+
+케밥 표기법 [ex) kebab-case]
+하이픈( - )으로 단어를 이음
+JS에선 표준
+
+스네이크 표기법 [ex) snake_case]
+언더바( _ )로 단어를 이음
